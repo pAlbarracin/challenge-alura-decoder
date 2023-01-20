@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alura Challenge Decoder</title>
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <header>
+            <img class="logo" src="./images/Logo-alura.png" alt="Logo Alura">
+            <h1>ENCRIPTADOR / DESENCRIPTADOR DE TEXTO</h1>
+    </header>
+    <main>
+        <section>
+            <div class="primera-caja">
+                <img class="img-encriptado" src="./images/encriptado.png" alt="Imagen de Encriptado">
+                <div class="caja-interna">
+                    <p class="advertencia">	&#9888 Solo minúsculas, no acentos ni caracteres especiales.</p>
+                    <textarea name="frase-origen" onkeypress="validaCaracter(event)" id="frase-origen" cols="30" rows="8" placeholder="Ingrese aquí texto a encriptar/desencriptar..."></textarea>
+                </div>
+                
+            </div>
+            <form class="caja-botones">
+                    <button id="btn-encriptar" type="button" onclick="encriptar()" >Encriptar</button>
+                    <button id="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </form>
+            <div class="segunda-caja">
+                <textarea id="frase-destino"  cols="30" rows="6" placeholder="mmmm... Todavia no has ingresado tu texto arriba"></textarea>
+                <button id="btn-copiar" type="button" onclick="copiarAMemoria()" >Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&#169 Copyright Paul Francis Albarracin Castillo - Todos los derechos reservados</p>
+    </footer>
+    
+</body>
+</html>

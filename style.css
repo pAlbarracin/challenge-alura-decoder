@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
+
+body{
+    background-color: #004D93;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1{
+    color: #ffffff;
+}
+
+#btn-encriptar, #btn-desencriptar{
+    height: 50px;
+    width: 300px;
+    color: #ffffff;
+    background-color: #33CCFF;
+    border: none;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.primera-caja{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.caja-interna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.caja-botones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.segunda-caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.advertencia{
+    color: #ffffff;
+    font-size: 10px;
+}
+
+#frase-origen{
+    width: 90%;
+    border-radius: 50px;
+    background-color: #0078BA;
+    border-color: #33CCFF;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 30px;
+    text-transform: lowercase;
+}
+
+#frase-origen::placeholder{
+    color: #33CCFF;
+}
+
+#frase-destino{
+    width: 95%;
+    border-radius: 50px;
+    font-size: 16px;
+    border-color: #33CCFF;
+    padding: 30px;
+}
+
+#btn-copiar {
+    align-self: end;
+    height: 50px;
+    width: 250px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+#btn-copiar:hover, #btn-encriptar:hover, #btn-desencriptar:hover {
+    background-color: #0078BA;
+}
+
+footer{
+    border-top: 1px solid white;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  
+    .img-encriptado {
+        display: none;
+    }
+
+    #frase-origen, #frase-destino{
+        width: 85%;
+        font-size: 10px;
+        resize: none;
+    }
+
+   
+    h1{
+        font-size: 18px;
+    }
+
+    #btn-copiar, #btn-encriptar, #btn-desencriptar {
+        height: 30px;
+        width: 138px;
+        align-self: center;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 50%;
+    }
+
+    .primera-caja{
+        justify-content: center;
+    }
+
+    
+}
